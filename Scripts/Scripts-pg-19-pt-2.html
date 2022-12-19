@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using functions in script tags</title>
+    <!--2nd page on Scripts. Is the second example doc-->
+  </head>
+  <body>
+    <p>This is A Web Page</p>
+    <p id="demo1">This is a Paragraph</p>
+    <button type="button" onclick="FunctionZ()">Click Me</button>
+    <script>
+      function FunctionZ() {
+        document.getElementById("demo1").innerHTML =
+          "I have changed the Paragraph";
+      }
+    </script>
+  </body>
+</html>
