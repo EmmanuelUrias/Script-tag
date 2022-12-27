@@ -18,10 +18,10 @@
 
         let fingerMessage;
 
-        if (typeof fingers !== "number") {
-          //  throw new Error("Fingers must be a number"); this line will throw an error in the console but not on the users interface.
+        /* if (typeof fingers !== "number") {
+         // throw new Error("Fingers must be a number"); //this line will throw an error in the console but not on the users interface.
           fingerMessage = "Fingers must be a number";
-        } else if (fingers > 10) {
+        } else */ if (fingers > 10) {
           fingerMessage = "Tf?";
         } else if (fingers >= 10) {
           fingerMessage = "Thank god";
