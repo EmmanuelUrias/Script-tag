@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables</title>
+  </head>
+  <body>
+    <p>You are studying JS variables</p>
+    <p>In the following examples the variables have full-word names</p>
+    <h1 id="totalPrice"></h1>
+    <script>
+      let milkPrice = 2.6;
+      let cerealPrice = 3.4;
+      let sugar = 6.29;
+      let strawberries = 2.0;
+
+      let totalPrice = cerealPrice + milkPrice + sugar + strawberries;
+      document.getElementById("totalPrice").innerHTML =
+        "Your total is" + " " + totalPrice;
+    </script>
+  </body>
+</html>
