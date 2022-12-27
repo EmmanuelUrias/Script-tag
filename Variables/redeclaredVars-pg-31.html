@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>You are learning JavaScript Variables</p>
+    <p>This is JavaScript's undeclared variables.</p>
+    <p id="variable-demo"></p>
+    <script>
+      var num = 5555.444;
+      var novelist = "Charles Lamb";
+      var introduction = "Charles Lamb wrote beautiful humor.";
+      //Even though the variables are redeclared the variables value cannot be changed to undefined after it's declaration.
+      var num;
+      var novelist;
+      var introduction;
+      document.getElementById("variable-demo").innerHTML =
+        num + "<br>" + novelist + "<br>" + introduction;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="switch-demo"></p>
+    <script>
+      //default is at the end to ensure that something still runs even if it is outside the switch block
+      var weekdays;
+      switch (new Date().getDay()) {
+        case 0:
+          weekdays = "it is the restful Sunday";
+          break;
+        case 1:
+          weekdays = "it is the blue blue Monday";
+          break;
+        case 3:
+          weekdays = "it is the hectic Wednesday";
+          break;
+        case 4:
+          weekdays = "it is the overwhelming Thursday";
+          break;
+        case 5:
+          weekdays = "it is the joyful Friday";
+          break;
+        case 6:
+          weekdays = "it is the sleepy Saturday";
+          break;
+        default:
+          weekdays =
+            "I am desperately waiting for the weekend because I have planned a vacation.";
+      }
+      document.getElementById("switch-demo").innerHTML = weekdays;
+    </script>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="switch-demo"></p>
+    <script>
+      //default can be used at the end and beginning of a switch block
+      var weekdays;
+      switch (new Date().getDay()) {
+        default:
+          weekdays =
+            "I am desperately waiting for the weekend because I have planned a vacation.";
+          break;
+        case 0:
+          weekdays = "it is the restful Sunday";
+          break;
+        case 1:
+          weekdays = "it is the blue blue Monday";
+          break;
+        case 3:
+          weekdays = "it is the hectic Wednesday";
+          break;
+        case 4:
+          weekdays = "it is the overwhelming Thursday";
+          break;
+        case 5:
+          weekdays = "it is the joyful Friday";
+          break;
+        case 6:
+          weekdays = "it is the sleepy Saturday";
+      }
+      document.getElementById("switch-demo").innerHTML = weekdays;
+    </script>
+  </body>
+</html>

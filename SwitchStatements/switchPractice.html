@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch Statements practice</title>
+  </head>
+  <body>
+    <button id="btn1">giraffe</button>
+    <button id="btn2">cow</button>
+    <button id="btn3">dog</button>
+    <button id="btn4">pig</button>
+    <button id="btn5">spoon</button>
+    <button id="btn6">dinosaur</button>
+    <p id="message"></p>
+
+    <p style="display: none">
+      Our orginal code issues: The 'inputValue' variable is defined inside the
+      event listener function, so it is not accessible outside of that function.
+      To make the inputValue variable accessible to the 'switch' statement, you
+      should define it outside the event listener function.<br />
+      The 'button' element has the same 'id' attribute value for all the
+      buttons. The 'id' attribute should be unique for each element on the page,
+      so you should use different 'id' values for each button.<br />
+      The 'switch' statement is using the 'animal' variable, which is not being
+      updated anywhere in the code. You should update the 'animal' variable to
+      the 'inputValue' variable inside the event listener function.
+    </p>
+    <script>
+      //we first define the inputValue and animal variables outside the event listener function. Then, we use querySelectorAll to select all the buttons, and use the forEach method to attach an event listener to each button. Inside the event listener function, we update the inputValue variable to the text inside
+      let inputValue;
+
+      let animal;
+
+      const button = document.querySelectorAll(
+        "#btn1, #btn2, #btn3, #btn4, #btn5, #btn6"
+      );
+      button.forEach((button) => {
+        button.addEventListener("click", function () {
+          inputValue = button.innerHTML;
+          animal = inputValue;
+
+          switch (animal) {
+            case "cow":
+              console.log("This animal will go on Noah's ark");
+              document.getElementById("message").innerHTML =
+                "This animal will go on Noah's ark";
+              break; // with this break the code would just be continued to be read without stopping to do the console.log and without updating the message.
+            case "giraffe":
+              console.log("This animal will go on Noah's ark");
+              document.getElementById("message").innerHTML =
+                "This animal will go on Noah's ark";
+              break;
+            case "dog":
+              console.log("This animal will go on Noah's ark");
+              document.getElementById("message").innerHTML =
+                "This animal will go on Noah's ark";
+              break;
+            case "pig":
+              console.log("This animal will go on Noah's ark");
+              document.getElementById("message").innerHTML =
+                "This animal will go on Noah's ark";
+              break;
+            case "spoon":
+              console.log("this isn't an animal");
+              document.getElementById("message").innerHTML =
+                "this isn't an animal";
+              break;
+            case "dinosaur":
+            default:
+              console.log("This animal will not go on Noah\s ark");
+              document.getElementById("message").innerHTML =
+                "This animal will not go on Noah\s ark";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

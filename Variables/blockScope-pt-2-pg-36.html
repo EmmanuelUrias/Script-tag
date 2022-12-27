@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>I will use the let keyword now to redeclare a variable</p>
+    <p id="let-demo"></p>
+    <script>
+      var xyz = 1000;
+      // The value of xyz variable is 1000
+      {
+        let xyz = 1;
+        // Now the value of xyz is set at 1
+      }
+      // The let keyword will let the variable xyz retain the previously declared value
+      document.getElementById("let-demo").innerHTML = xyz;
+    </script>
+  </body>
+</html>

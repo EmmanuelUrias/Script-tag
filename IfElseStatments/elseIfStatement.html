@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>personal toy ex.</title>
+  </head>
+  <body>
+    <p>How many fingers do you have</p>
+    <input id="userInput" type="text" />
+    <button onclick="fingerCounter()">Submit</button>
+    <p id="message"></p>
+    <script>
+      function fingerCounter() {
+        let fingers = document.getElementById("userInput").value;
+        console.log(fingers);
+
+        let fingerMessage;
+
+        if (typeof fingers !== "number") {
+          //  throw new Error("Fingers must be a number"); this line will throw an error in the console but not on the users interface.
+          fingerMessage = "Fingers must be a number";
+        } else if (fingers > 10) {
+          fingerMessage = "Tf?";
+        } else if (fingers >= 10) {
+          fingerMessage = "Thank god";
+        } else if (fingers >= 9) {
+          fingerMessage = "Only missing one isn't too bad";
+        } else if (fingers >= 8) {
+          fingerMessage = "Might wanna start being more careful";
+        } else if (fingers >= 7) {
+          fingerMessage = "Good luck becoming a hand model";
+        } else {
+          fingerMessage = "Soon you'll be captain hook";
+        }
+        document.getElementById("message").innerHTML = fingerMessage;
+      }
+    </script>
+  </body>
+</html>

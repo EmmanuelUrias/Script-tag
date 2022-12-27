@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>I will display "Have a Great Day!" if the time is less than 15:00:</p>
+    <p id="if-demo">Have a Savory Evening!</p>
+    <script>
+      // the 'if' in a if statement is always going to be like a if true statements
+      if (new Date().getHours() < 15) {
+        document.getElementById("if-demo").innerHTML = "Have a Great Day!";
+      }
+    </script>
+  </body>
+</html>

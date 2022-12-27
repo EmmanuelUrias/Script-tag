@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>
+      In this example, I will be declaring a Variable by Using the const keyword
+    </p>
+    <p id="const-demo"></p>
+    <script>
+      var xyz = 15;
+      // The value of xyz is 15
+      {
+        const xyz = 1;
+        // The value of xyz is 1
+      }
+      // The value of xyz is 15
+      document.getElementById("const-demo").innerHTML = xyz;
+
+      //IMPORTANT NOTE: The keyword const does not define constant values.-
+      //In reality, it defines constant references to the values you use in the equation. That is why you cannot change the primitive values of constants. However, you can change properties.
+    </script>
+  </body>
+</html>

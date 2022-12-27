@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>These are JavaScript Scopes</p>
+    <p>I will define and declare a variable outside of Function2().</p>
+    <p id="let-demo1"></p>
+    <p id="let-demo2"></p>
+    <script>
+      Function2();
+
+      function Function2() {
+        let cars = "BMW";
+        document.getElementById("let-demo1").innerHTML =
+          typeof cars + " " + cars;
+      }
+      document.getElementById("let-demo2").innerHTML = typeof cars;
+    </script>
+  </body>
+</html>

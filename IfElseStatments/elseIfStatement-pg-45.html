@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>
+      I would like you to click the button given below to display a greeting as
+      per the current time:
+    </p>
+    <button onclick="FunctionX()">
+      Please hit me to display the greetings
+    </button>
+    <p id="ifelse-demo"></p>
+    <script>
+      //You can add the else-if statement to the code to specify the new condition if the first condition returns false.
+      function FunctionX() {
+        var mygreetings;
+        var mytime = new Date().getHours();
+        if (mytime < 8) {
+          mygreetings =
+            "Have a Good Morning. I hope you have had a nutritious breakfast. Get ready for work";
+        } else if (mytime < 15) {
+          mygreetings = "Have a Great Day. Don't forget to eat your lunch.";
+        } else {
+          mygreetings = "Have a Great Evening. Any special plans for dinner?";
+        }
+        document.getElementById("ifelse-demo").innerHTML = mygreetings;
+      }
+    </script>
+  </body>
+</html>

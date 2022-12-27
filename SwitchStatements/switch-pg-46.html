@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="switch-demo"></p>
+    <script>
+      var weekdays;
+      switch (
+        new Date().getDay() //checks day to see which day it is(it is an array)
+      ) {
+        case 0: // the index in the array for days of the week
+          weekdays = "the restful Sunday";
+          break;
+        case 1:
+          weekdays = "the blue blue Monday";
+          break;
+        case 2:
+          weekdays = "the superstitious Tuesday";
+          break;
+        case 3:
+          weekdays = "the hectic Wednesday";
+          break;
+        case 4:
+          weekdays = "the overwhelming Thursday";
+          break;
+        case 5:
+          weekdays = "the joyful Friday";
+          break;
+        case 6:
+          weekdays = "the sleepy Saturday";
+      }
+      document.getElementById("switch-demo").innerHTML =
+        "Today is " + weekdays + "." + " Have a great and productive day!";
+    </script>
+  </body>
+</html>
