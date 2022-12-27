@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Learning Properties of JavaScript Strings</p>
+    <p id="string-demo"></p>
+    <script>
+      var msgX = "I am about to leave for 'New York' to start my own business.";
+      var msgY = msgX.replace(/NEW YORK/i, "Las Vegas"); // These slashes and i at the end of the first parameter make it case insensitive.
+      document.getElementById("string-demo").innerHTML = msgY;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>padStart() and padEnd() method example</title>
+  </head>
+  <body>
+    <p id="displayData"></p>
+    <script>
+      let data = [
+        { name: "Alice", age: 30, city: "New York" },
+        { name: "Bob", age: 25, city: "Chicago" },
+        { name: "Charlie", age: 35, city: "Los Angeles" },
+      ];
+
+      let displayData = "Name\tAge\tCity\n"; // Initialize the display string
+      // \t is a special character in JavaScript that represents a tab character. When used in a string, it inserts a tab character at that point in the string. Tab characters are often used to align text or create a table-like structure in text.
+
+      // Add the table rows to the display string
+      for (let i = 0; i < data.length; i++) {
+        let name = data[i].name.padEnd(10, " ");
+        let age = data[i].age.toString().padStart(3, " ");
+        let city = data[i].city.padEnd(10, " ");
+        displayData += `${name}\t${age}\t${city}\n`;
+      }
+
+      // Set the innerHTML of the display element to the display string
+      document.getElementById(
+        "displayData"
+      ).innerHTML = `<pre>${displayData}</pre>`; //The pre element is used to display preformatted text and preserves whitespace, which is useful for displaying tabular data.
+    </script>
+  </body>
+</html>

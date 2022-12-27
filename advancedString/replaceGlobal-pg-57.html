@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Learning Properties of JavaScript Strings</p>
+    <p id="string-demo"></p>
+    <script>
+      var msgX =
+        "The Coach of the NBA team will visit Las Vegas. Las Vegas has a huge fan base for NBA stars. I love Las Vegas";
+      var msgY = msgX.replace(/Las Vegas/g, "Los Angeles"); //These slashes and g make replacing the first param global changing all of them as needed.
+      document.getElementById("string-demo").innerHTML = msgY;
+    </script>
+  </body>
+</html>
