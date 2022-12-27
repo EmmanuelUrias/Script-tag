@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Learning JavaScript constants</p>
+    <p>
+      Prohibited: You cannot reassign a different object to the same constant:
+    </p>
+    <p id="const-demo"></p>
+    <script>
+      try {
+        const mycar = {
+          name: "Honda",
+          model: "Vezel",
+          make: "Japan",
+          color: "black",
+        };
+        mycar = { name: "BMW", model: "Z1", make: "German", color: "red" };
+      } catch (err) {
+        document.getElementById("demo").innerHTML = err;
+      }
+    </script>
+  </body>
+</html>

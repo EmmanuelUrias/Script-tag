@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>You are learning JavaScript constants</p>
+    <p>Keep in mind that you cannot change primitive values.</p>
+    <p id="const-demo"></p>
+    <script>
+      try {
+        const xyz = 89.141592653589793;
+        xyz = 54.14;
+      } catch (err) {
+        document.getElementById("const-demo").innerHTML = err;
+      }
+    </script>
+  </body>
+</html>

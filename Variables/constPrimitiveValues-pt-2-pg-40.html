@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>JavaScript constants</p>
+    <p>You can change the properties of objects after Declaring them:</p>
+    <p id="const-demo"></p>
+    <script>
+      //IMPORTANT NOTE: While you cannot change the primitive values in JavaScript constants, you can change objects' properties.
+
+      // I am going to create an object:
+      const mycar = {
+        name: "Honda",
+        model: "Vezel",
+        make: "Japan",
+        color: "Grey",
+      };
+      // Let us Change the property:
+      mycar.model = "Civic";
+      // You also can add a new property:
+      mycar.transmission = "Automatic";
+      // It is time to display your properties:
+      document.getElementById("const-demo").innerHTML =
+        "I have a " +
+        mycar.name +
+        "." +
+        " It is of " +
+        mycar.color +
+        " color and its model label is " +
+        mycar.model +
+        ". " +
+        "This car has " +
+        mycar.transmission +
+        ".";
+    </script>
+  </body>
+</html>
