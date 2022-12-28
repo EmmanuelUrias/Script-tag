@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>String arrays</h1>
+    <p>Please click "Click me" to produce the first array element.</p>
+    <button onclick="FunctionX()">Click This Button</button>
+    <p id="string-demo"></p>
+    <script>
+      //The heading may appear a bit confusing. There is no such thing as string arrays. However, there is a new method that turns a string into an array.
+      function FunctionX() {
+        var msg1 = "Texas, Las Vegas, Los Angeles.";
+        var msg2 = msg1.split(",");
+        document.getElementById("string-demo").innerHTML = msg2[0];
+      }
+    </script>
+  </body>
+</html>
