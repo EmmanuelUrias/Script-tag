@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Learning Array Methods</p>
+    <p>The shift()</p>
+    <button onclick="FunctionYY()">Click Me</button>
+    <p id="array-demo"></p>
+    <script>
+      var veggies = ["Garlic", "Pumpkin", "Ginger", "Tomato"];
+      document.getElementById("array-demo").innerHTML = veggies;
+
+      function FunctionYY() {
+        veggies.shift(); // similar to the .pop() method in the sense that it removes an item from the array, but in the .shift() method it removes the first item rather than the last.
+        document.getElementById("array-demo").innerHTML = veggies;
+      }
+    </script>
+  </body>
+</html>

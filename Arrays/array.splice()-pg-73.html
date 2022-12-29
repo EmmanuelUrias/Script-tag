@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>JavaScript splice()</p>
+    <p>I will use the splice() method to add new elements.</p>
+    <p>
+      In the splice() method, the first parameter (3 in this case) indicates the
+      index at which to start adding or removing elements. The second parameter
+      (0 in this case) indicates the number of elements to be removed.
+    </p>
+    <button onclick="FunctionZZ()">Click Me</button>
+    <p id="array-demo1"></p>
+    <p id="array-demo2"></p>
+    <p>
+      <strong>Syntax for splice</strong> <br />
+      array.splice(start[, deleteCount[, item1[, item2[, ...]]]])
+    </p>
+    <script>
+      var veggies = ["Pumpkin ", "Ginger ", "Tomato ", "Potato "];
+
+      document.getElementById("array-demo1").innerHTML =
+        "You are seeing the original Array: <br>" + veggies;
+
+      function FunctionZZ() {
+        veggies.splice(3, 0, "Spinach ", "Garlic ");
+        //So in this example, the splice() method will start at the 3rd index (which is the index of the "Potato" element) and will not remove any elements. Instead, it will add the elements "Spinach" and "Garlic" to the array, starting at the 3rd index.
+        document.getElementById("array-demo2").innerHTML =
+          "You are seeing the new Array: <br>" + veggies;
+      }
+    </script>
+  </body>
+</html>

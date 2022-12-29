@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Learning Array Methods</p>
+    <p>The delete method</p>
+    <p id="array-demo1"></p>
+    <p id="array-demo2"></p>
+    <script>
+      var veggies = ["Garlic ", "Pumpkin ", "Ginger ", "Tomato "];
+      document.getElementById("array-demo1").innerHTML =
+        "Here is the first vegetable name " + veggies[0];
+      console.log(veggies);
+
+      delete veggies[0]; // deletes items from an array based on the index number you input
+      console.log(veggies);
+
+      document.getElementById("array-demo2").innerHTML =
+        "Here is the first vegetable name: " + veggies[0];
+    </script>
+  </body>
+</html>

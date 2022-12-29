@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>JavaScript splice()</p>
+    <p>I will use the splice() method to add new elements.</p>
+    <button onclick="FunctionZZ()">Click Me</button>
+    <p id="array-demo1"></p>
+    <p id="array-demo2"></p>
+    <script>
+      var veggies = ["Pumpkin ", "Ginger ", "Tomato ", "Potato "];
+      document.getElementById("array-demo1").innerHTML =
+        "You are seeing the original Array: <br>" + veggies;
+
+      function FunctionZZ() {
+        veggies.splice(0, 2);
+        //the splice() method will start at the 0th index (which is the first element of the array) and will remove two elements from the array.
+        document.getElementById("array-demo2").innerHTML =
+          "You are seeing the new Array: <br>" + veggies;
+      }
+    </script>
+  </body>
+</html>
