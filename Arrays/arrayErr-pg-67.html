@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Learning JavaScript Arrays</p>
+    <p>
+      I will add elements that have high indices. The result will be undefined
+      "holes" in the array.
+    </p>
+    <p id="undefinedarray-demo"></p>
+    <script>
+      var veggies, msg, vLn, i;
+
+      veggies = ["Pumpkin", "Ginger", "Tomato", "Garlic"];
+
+      veggies[8] = "Spinach";
+
+      vLn = veggies.length;
+
+      msg = "";
+
+      for (i = 0; i < vLn; i++) {
+        msg += veggies[i] + "<br>";
+      }
+      document.getElementById("undefinedarray-demo").innerHTML = msg;
+    </script>
+  </body>
+</html>

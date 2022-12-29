@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Learning JavaScript Arrays</p>
+    <p>I will use the push method to append new elements to existing arrays.</p>
+    <button onclick="FunctionXX()">Please click this Button</button>
+    <p id="array-demo"></p>
+    <script>
+      var veggies = ["Pumpkin", "Tomato", "Ginger", "Potato"];
+      document.getElementById("array-demo").innerHTML = veggies;
+
+      function FunctionXX() {
+        veggies.push("Spinach");
+        document.getElementById("array-demo").innerHTML = veggies;
+      }
+    </script>
+  </body>
+</html>
