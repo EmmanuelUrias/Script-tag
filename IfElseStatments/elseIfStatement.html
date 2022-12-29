@@ -13,15 +13,17 @@
     <p id="message"></p>
     <script>
       function fingerCounter() {
-        let fingers = document.getElementById("userInput").value;
-        console.log(fingers);
+        let userInput = document.getElementById("userInput").value;
+        console.log(userInput); // this is a string
+
+        let fingers = Number(userInput);
+        console.log(typeof fingers);
 
         let fingerMessage;
 
-        /* if (typeof fingers !== "number") {
-         // throw new Error("Fingers must be a number"); //this line will throw an error in the console but not on the users interface.
+        if (isNaN(fingers)) {
           fingerMessage = "Fingers must be a number";
-        } else */ if (fingers > 10) {
+        } else if (fingers > 10) {
           fingerMessage = "Tf?";
         } else if (fingers >= 10) {
           fingerMessage = "Thank god";
@@ -31,6 +33,8 @@
           fingerMessage = "Might wanna start being more careful";
         } else if (fingers >= 7) {
           fingerMessage = "Good luck becoming a hand model";
+        } else if (fingers <= 0) {
+          fingerMessage = "Let's be honest here";
         } else {
           fingerMessage = "Soon you'll be captain hook";
         }

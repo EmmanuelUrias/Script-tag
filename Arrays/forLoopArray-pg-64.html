@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>These are JavaScript Arrays</p>
+    <p>I will use the for loop in the following code</p>
+    <p id="array-demo"></p>
+    <script>
+      var carsforsale, msg, cLn, y;
+
+      carsforsale = ["BMW", "Mitsubishi", "Honda", "Toyota"];
+
+      cLn = carsforsale.length;
+
+      msg = "<ul>";
+
+      for (y = 0; y < cLn; y++) {
+        msg += "<li>" + carsforsale[y] + "</li>";
+      }
+
+      msg += "</ul>";
+
+      document.getElementById("array-demo").innerHTML = msg;
+    </script>
+  </body>
+</html>

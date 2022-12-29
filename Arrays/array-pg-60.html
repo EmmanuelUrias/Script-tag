@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Learning JavaScript Arrays</p>
+    <p id="array-demo"></p>
+    <p>
+      When looking at the code it looks like the carsTextDisplay variable should
+      be an empty string but when we declare it outside the for loop and update
+      it within the for loop it gets it's new value and we can display the
+      correct data to the page
+    </p>
+    <p>
+      You could define the carsTextDisplay variable outside of the loop and
+      update the innerHTML property once the loop has finished executing, like
+      this:<br />
+      let carsTextDisplay = ""; <br />
+      for (let i = 0; i &lt; carsforsale.length; i++) { <br />
+      carsTextDisplay += carsforsale[i] + " "; } <br />
+      document.getElementById("array-demo").innerHTML = carsTextDisplay;
+    </p>
+    <script>
+      var carsforsale = ["Honda", "Toyota", "GTX", "Ford"];
+
+      //For example, on the first iteration of the loop, 'i' will have a value of 0 and the loop will execute the code inside the curly braces. On the second iteration, 'i' will have a value of 1, and so on, until 'i' is equal to carsforsale.length - 1, at which point the loop will stop executing.-
+      //The length property is a useful way to determine the size of an array, and it can be used in loops or other operations to iterate over the elements of the array.
+      // carsforsale.length refers to the length of the carsforsale array, which is the number of elements in the array.
+      let carsTextDisplay = "";
+      for (let i = 0; i < carsforsale.length; i++) {
+        carsTextDisplay += carsforsale[i] + ", ";
+      }
+
+      document.getElementById("array-demo").innerHTML = carsTextDisplay;
+    </script>
+  </body>
+</html>

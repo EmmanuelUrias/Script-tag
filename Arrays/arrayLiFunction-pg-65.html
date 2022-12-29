@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>These are JavaScript Arrays</p>
+    <p>I will use the for loop in the following code</p>
+    <p id="array-demo"></p>
+    <script>
+      var carsforsale, msg;
+      carsforsale = ["BMW", "Mitsubishi", "Honda", "Toyota"];
+
+      msg = "<ul>";
+
+      carsforsale.forEach(FunctionX);
+
+      msg += "</ul>";
+
+      document.getElementById("array-demo").innerHTML = msg;
+
+      function FunctionX(value) {
+        msg += "<li>" + value + "</li>";
+      }
+    </script>
+  </body>
+</html>
