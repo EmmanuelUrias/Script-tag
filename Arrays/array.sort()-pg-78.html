@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>This is JavaScript Array Sort method</p>
+    <p>This method will sort out an array in alphabetical order.</p>
+    <button onclick="FunctionAlpha()">Please Click Me</button>
+    <p id="demo10"></p>
+    <script>
+      var veggies = ["Garlic ", "Spinach ", "Radish ", "Peas ", "Potato "];
+      document.getElementById("demo").innerHTML = veggies;
+      function FunctionAlpha() {
+        veggies.sort();
+        //Sorts the array in alphabetical order.
+        document.getElementById("demo10").innerHTML = veggies;
+      }
+    </script>
+  </body>
+</html>
