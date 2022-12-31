@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>JavaScript Array concat()</p>
+    <p>The concat() method follows the merging pattern:</p>
+    <p>
+      <strong>difference between .forEach and .map:</strong><br />
+      let arr = [1, 2, 3, 4, 5];<br />
+
+      // Using forEach()<br />
+      arr.forEach(item => console.log(item * 2));<br />
+      // Output: 2 4 6 8 10<br />
+
+      // Using map()<br />
+      let newArr = arr.map(item => item * 2);<br />
+      console.log(newArr); // [2, 4, 6, 8, 10]
+    </p>
+    <p id="array-demo"></p>
+    <script>
+      var veggies = ["Tomato ", "Potato ", "Cauliflower ", "Cabbage "];
+      var frutoos = ["Orange ", "Fig ", "Guava ", "Date "];
+      var summerfrutoos = ["Watermelon ", "Melon ", "Mango "];
+      var fruitbasket = veggies.concat(frutoos, summerfrutoos);
+      // .concat() can be used to combine multiple arrays.
+
+      fruitbasket = fruitbasket.map((item) => item.trim());
+      // the .map method iterates over each item in the array repeating the .trim method over each item in the array. The .trim method removes the last space from each item in the array.
+      // although the .forEach method also iterates over each item in the array it would update the current array rather than make a new one with the information we wanted updated.
+
+      fruitbasket.forEach((item, i) => {
+        fruitbasket[i] = " " + item;
+      });
+      //fruitbasket = fruitbasket.map((item) => " " + item);
+      //The map() method is designed specifically for transforming arrays and returns a new array with the modified elements, making it a good choice for this type of operation.
+      // in the .map we define each item in the array as item and simlpy add a space infront of it.
+      document.getElementById("array-demo").innerHTML = fruitbasket;
+    </script>
+  </body>
+</html>

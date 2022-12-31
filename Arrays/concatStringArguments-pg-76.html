@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>JavaScript Array concat()</p>
+    <p>The concat() method follows the merging pattern:</p>
+    <p>
+      <strong>What is an argument?:</strong><br />
+      An argument is a value that is passed to a function when it is called.
+      ex.<br />
+      function add(x, y) {<br />
+      return x + y;<br />
+      }<br />
+
+      console.log(add(1, 2)); // 3
+    </p>
+    <p>
+      <strong>Well isn't that a parameter?:</strong><br />
+      A parameter is a variable in a function definition that represents an
+      argument passed to the function. ex.<br />
+      function add(x, y) {<br />
+      return x + y;<br />
+      }<br />
+
+      console.log(add(1, 2)); // 3<br />
+      console.log(add(3, 4)); // 7
+    </p>
+    <p>
+      Although they look extremely similar here is a key difference:<br />
+      a parameter is a placeholder for an argument that is defined when the
+      function is defined.<br />
+      An argument, on the other hand, is a value that is passed to a function
+      when it is called. When a function is called with arguments, the arguments
+      are matched up with the corresponding parameters and used to perform a
+      specific task or calculation.
+    </p>
+    <p id="array-demo"></p>
+    <script>
+      var veggies = ["Tomato ", "Potato ", "Cauliflower ", "Cabbage "];
+      var fruitbasket = veggies.concat("Spinach ", "garlic ", "eggplant ");
+      // we are passing arguments into the .concat method to add them to the veggies array.
+      document.getElementById("array-demo").innerHTML = fruitbasket;
+    </script>
+  </body>
+</html>
