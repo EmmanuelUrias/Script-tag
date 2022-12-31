@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Learning JavaScript Array Sort</p>
+    <p>By clicking the button, you can sort the array in ascending order.</p>
+    <button onclick="FunctionT()">Click Me</button>
+    <p id="demo10"></p>
+    <script>
+      var nums = [4000, 1000, 15, 555, 253, 102];
+      document.getElementById("demo10").innerHTML = nums;
+      function FunctionT() {
+        nums.sort(function (x, y) {
+          return x - y;
+          // in this callback function the sort method is comparing two elements x and y which values come from the array, and doing a simple x - y to see if the number is positive and if it is that means x is greater than y and it will do this to all the elements in the array till it sorts out the order of all the numbers.
+        });
+        document.getElementById("demo10").innerHTML = nums;
+      }
+    </script>
+  </body>
+</html>

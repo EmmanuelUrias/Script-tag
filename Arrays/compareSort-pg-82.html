@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Learning JavaScript Array Sort</p>
+    <p>
+      You can use the click buttons to sort out the arrays either in
+      alphabetical order or in numerical order.
+    </p>
+    <button onclick="FunctionP()">Click Me to Sort Alphabetically</button>
+    <button onclick="FunctionQ()">Click Me to Sort Numerically</button>
+    <button onclick="reverseSortNumerically()">
+      Click Me to Sort Reverse Numerically
+    </button>
+
+    <p id="demo1"></p>
+    <script>
+      var nums = [4045, 1002, 1567, 5234, 251, 100];
+      document.getElementById("demo1").innerHTML = nums;
+      function FunctionP() {
+        nums.sort();
+        document.getElementById("demo1").innerHTML = nums;
+      }
+      function FunctionQ() {
+        nums.sort(function (x, y) {
+          return x - y;
+        });
+        document.getElementById("demo1").innerHTML = nums;
+      }
+
+      function reverseSortNumerically() {
+        nums.sort(function (x, y) {
+          return y - x;
+        });
+        document.getElementById("demo1").innerHTML = nums;
+      }
+    </script>
+
+    <p>
+      When you feed the sort() function with a couple of values, it dispatches
+      the values to the compare function. After that, it sorts these values as
+      per the returned values that are either negative, positive, or zero. If
+      you see negative results, you will have x sorted out from y. If you see
+      positive results, you will see y sorted before x. The figure zero suggests
+      no change in the sorting order of the values.
+    </p>
+  </body>
+</html>
