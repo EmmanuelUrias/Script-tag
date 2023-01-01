@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>This is Array.findIndex()</p>
+    <p id="demo055"></p>
+    <script>
+      var nums = [444, 55544, 2333, 56, 22, 876];
+
+      var a = nums.findIndex(FunctionZ);
+      // The findIndex() method will return the index number of the first element of your array that will go through and pass a test. As the array we are working on is made of numbers, I will put a condition that the array will test each number to check if it is lesser than 500 or not
+
+      document.getElementById("demo055").innerHTML =
+        "The index of the number that is lower than 500 = " + a;
+
+      function FunctionZ(valueF) {
+        return valueF < 500;
+      }
+    </script>
+  </body>
+</html>

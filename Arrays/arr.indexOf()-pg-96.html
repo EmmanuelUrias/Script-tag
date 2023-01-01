@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>This is JavaScript Array.indexOf()</p>
+    <p>
+      The following program will display the index of the elements of the array.
+    </p>
+    <p id="demo789"></p>
+    <script>
+      var nums = [45890, 170, 345, 1800, 270, 622, 23416, 87625900000];
+
+      var p = nums.indexOf(622); // indexOf() method combs through the array to search for a value and then return the position of the value
+      // At the start, you need to write the name of the item that the method must search for. The second part is optional. You may tell the code about the starting point of the search. The negative values will start at a specific position and counting will start from the last point. The search will go on to the end. If the browser does not find the item, it will return -1 as a result. If the item has more than one instant presence in the array, it will display the first occurrence's position.
+
+      document.getElementById("demo789").innerHTML =
+        "The position of 622 in the array is: " + p;
+    </script>
+  </body>
+</html>

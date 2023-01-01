@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>This is JavaScript Array.some()</p>
+    <p>The following program will display the results of the test.</p>
+    <p id="demo789"></p>
+    <script>
+      var nums = [45890, 170, 345, 1800, 270, 622, 23416, 87625900000];
+
+      var Over500 = nums.some(FunctionZ); // similar to the every() method except the .some() method will take more arguments if needed.
+
+      document.getElementById("demo789").innerHTML =
+        "Are there some values bigger than 500: " + Over500;
+
+      function FunctionZ(valueF) {
+        return valueF > 500;
+      }
+    </script>
+  </body>
+</html>

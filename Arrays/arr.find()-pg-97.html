@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>This is Array.find()</p>
+    <p id="demo00"></p>
+    <script>
+      var nums = [444, 55544, 2333, 56666, 22, 876];
+
+      var a = nums.find(FunctionZ); // The find() method gives you the value of the first item in the array that will pass the test function
+
+      document.getElementById("demo00").innerHTML =
+        "The number that is bigger than 500 = " + a;
+
+      function FunctionZ(valueF) {
+        return valueF > 500;
+      }
+    </script>
+  </body>
+</html>
