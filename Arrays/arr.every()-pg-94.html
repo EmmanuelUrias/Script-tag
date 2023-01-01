@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>This is JavaScript Array.every()</p>
+    <p>The following program will display the results of the test.</p>
+    <p id="demo789"></p>
+    <script>
+      var nums = [45890, 17, 3459, 18, 2, 6, 23416, 87625900000];
+
+      var Over500 = nums.every(FunctionZ); // The every() method runs a thorough check through the arrays to see if all the elements in the array pass a test. returns a boolean expression
+
+      document.getElementById("demo789").innerHTML =
+        "Are all values bigger than 500: " + Over500;
+
+      function FunctionZ(valueF) {
+        return valueF > 500;
+      }
+      // if we change every element in the array to 501 the .every() method will return true
+    </script>
+  </body>
+</html>

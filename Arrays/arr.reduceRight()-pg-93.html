@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>This is JavaScript Array. reduceRight ()</p>
+    <p>
+      The following program will create a new array by filtering all array
+      elements that tend to pass the test.
+    </p>
+    <p id="demo789"></p>
+    <script>
+      var nums = [45890, 17, 3459, 18, 2, 6, 23416, 87625900000];
+
+      var sum = nums.reduceRight(FunctionZ);
+      // very similar to the .reduce() method except it runs it from right to left in the array
+
+      document.getElementById("demo789").innerHTML =
+        "The Total sum of all the numbers is " + sum;
+
+      function FunctionZ(Total, valueF) {
+        return Total + valueF;
+      }
+    </script>
+  </body>
+</html>

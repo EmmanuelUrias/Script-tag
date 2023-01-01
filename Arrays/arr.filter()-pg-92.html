@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>This is JavaScript Array.filter()</p>
+    <p>
+      The following program will create a new array by filtering all array
+      elements that tend to pass the test.
+    </p>
+    <p id="demo789"></p>
+    <script>
+      var nums = [45890, 17, 3459, 18, 2, 6, 23416, 87625];
+
+      var over20 = nums.filter((value) => {
+        return value < 20;
+      });
+
+      document.getElementById("demo789").innerHTML = over20;
+
+      // Alt way to write the function
+      //  function FunctionZ(valueF, indexF, arrayF) {
+      //  return valueF < 20;
+      //  }
+    </script>
+  </body>
+</html>

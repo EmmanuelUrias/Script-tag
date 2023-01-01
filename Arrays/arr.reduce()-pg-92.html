@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>This is JavaScript Array.reduce()</p>
+    <p>
+      The following program will create a new array by reducing all array
+      elements that tend to pass the test.
+    </p>
+    <p id="demo789"></p>
+    <script>
+      var nums = [45890, 17, 3459, 18, 2, 6, 23416, 87625];
+
+      var over20 = nums.reduce(FunctionZ, 200000); // The most amazing thing about the reduce() method is that it takes an additional value to start with unlike other methods
+      // reduce() method makes a function call to all the array elements and produces one value, and runs from left to right in the array
+
+      document.getElementById("demo789").innerHTML = over20;
+
+      function FunctionZ(Total, valueF) {
+        return Total + valueF;
+      }
+    </script>
+  </body>
+</html>
