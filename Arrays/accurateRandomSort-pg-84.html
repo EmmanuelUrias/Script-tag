@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>JavaScript Array Sort Goes On</p>
+    <h3>This is Fisher-Yates Method</h3>
+    <p>
+      When you click the button repeatedly, you will sort the array in random
+      order.
+    </p>
+    <button onclick="FunctionXX()">Click Me</button>
+    <p id="demo12"></p>
+    <script>
+      var nums = [404, 10023, 123, 589, 2511, 102];
+      document.getElementById("demo12").innerHTML = nums;
+      function FunctionXX() {
+        var a, b, c;
+        for (a = nums.length - 1; a > 0; a--) {
+          (b = Math.floor(Math.random() * a)), (c = nums[a]); // assigns the value of the element at index 'a' in the nums array to the variable
+          nums[a] = nums[b];
+          nums[b] = c;
+        }
+        document.getElementById("demo12").innerHTML = nums;
+      }
+    </script>
+  </body>
+</html>

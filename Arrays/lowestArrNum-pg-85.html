@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>JavaScript Array Sorting Method</p>
+    <p>You are seeing the lowest number which is <span id="demo4"></span>.</p>
+    <script>
+      var nums = [4099999, 124100, 12, 5444, 2544444, 102343];
+      nums.sort(function (x, y) {
+        return x - y;
+      });
+      document.getElementById("demo4").innerHTML = nums[0];
+      // we sort the array from lowest to highest and get the first element from the array.
+    </script>
+  </body>
+</html>

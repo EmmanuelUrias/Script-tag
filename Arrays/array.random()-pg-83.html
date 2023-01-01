@@ -7,11 +7,14 @@
     <p id="demo10"></p>
     <script>
       var nums = [4000, 1000, 15, 555, 253, 102];
+
       document.getElementById("demo10").innerHTML = nums;
+
       function FunctionT() {
-        nums.sort(function (x, y) {
+        nums.sort((x, y) => {
           return 0.5 - Math.random();
         });
+        // the .random() method randomly sorts the array
         document.getElementById("demo10").innerHTML = nums;
       }
     </script>
