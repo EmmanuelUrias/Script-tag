@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>JavaScript Array Sorting for highest value</p>
+    <p>Here is the lowest number in the array: <span id="demo7"></span>.</p>
+    <script>
+      var nums = [4077879878, 10023, 147777777777, 53, 25, 1023];
+
+      document.getElementById("demo7").innerHTML = ArrayMinPoint(nums);
+
+      function ArrayMinPoint(arr) {
+        var length = arr.length;
+
+        var minimum = Infinity;
+
+        while (length--) {
+          if (arr[length] < minimum) {
+            minimum = arr[length];
+          }
+        }
+        return minimum;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>JavaScript Array Sorting Objects</p>
+    <p>Please click the buttons to sort out the objects of the car.</p>
+    <button onclick="FunctionO()">Please Click Me to Sort</button>
+    <p id="demo2"></p>
+    <script>
+      var carsObjects = [
+        { type: "Honda", year: 2020, Make: "Japan", Model: "Vezel" },
+        { type: "Toyota", year: 2010, Make: "Japan", Model: "Fortuner" },
+        { type: "Toyota", year: 2018, Make: "Japan", Model: "Vitz" },
+      ];
+
+      ToDisplayCars();
+
+      function FunctionO() {
+        carsObjects.sort(function (x, y) {
+          return x.year - y.year;
+          // we grab the objects property to sort that specific value from lowest to highest.
+        });
+        ToDisplayCars();
+      }
+
+      function ToDisplayCars() {
+        document.getElementById("demo2").innerHTML =
+          carsObjects[0].type +
+          " " +
+          carsObjects[0].year +
+          " " +
+          carsObjects[0].Make +
+          " " +
+          carsObjects[0].Model +
+          "<br>" +
+          carsObjects[1].type +
+          " " +
+          carsObjects[1].year +
+          " " +
+          carsObjects[0].Make +
+          " " +
+          carsObjects[0].Model +
+          "<br>" +
+          carsObjects[2].type +
+          " " +
+          carsObjects[2].year +
+          " " +
+          carsObjects[0].Make +
+          " " +
+          carsObjects[0].Model;
+        console.log(carsObjects);
+      }
+    </script>
+  </body>
+</html>

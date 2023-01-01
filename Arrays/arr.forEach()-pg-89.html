@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>This is JavaScript Array.forEach()</p>
+    <p>
+      This method makes a function call at least once for all individual array
+      elements.
+    </p>
+    <p id="demo44"></p>
+    <script>
+      var msg = "";
+
+      var nums = [4588888, 2234, 12349, 16899, 900025];
+
+      nums.forEach(FunctionE); // The forEach() method helps you make a function call for all the elements of the array
+
+      document.getElementById("demo44").innerHTML = msg;
+
+      function FunctionE(Evalue, Eindex, Earray) {
+        msg = msg + Evalue + "<br>";
+      }
+      // I have allocated three arguments to the function; the first argument deals with the value of the item, the second argument deals with the item's index, and the third argument deals with the array as a whole
+    </script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>JavaScript Array Sorting through Max method</p>
+    <p>Here is the highest number in the array: <span id="demo7"></span>.</p>
+    <script>
+      var nums = [4087787878, 1002333333333, 112, 5, 2544, 11220];
+
+      document.getElementById("demo7").innerHTML = ArrayMaxPoint(nums);
+
+      function ArrayMaxPoint(arr) {
+        return Math.max.apply(null, arr); // Math.min.apply() method will find the smallest item in the array.
+      }
+      //gets the highest number in the array
+    </script>
+  </body>
+</html>

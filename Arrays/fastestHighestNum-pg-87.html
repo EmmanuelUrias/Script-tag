@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>JavaScript Array Sorting for highest value</p>
+    <p>Here is the highest number in the array: <span id="demo7"></span>.</p>
+    <script>
+      var nums = [4077879878, 10023, 147777777777, 53, 25, 1023];
+
+      document.getElementById("demo7").innerHTML = ArrayMaxPoint(nums);
+
+      function ArrayMaxPoint(arr) {
+        var length = arr.length; // function first declares a variable length and initializes it to the length of the input array
+        var maximum = -Infinity; // Declares a variable maximum and initializes it to -Infinity, which is a special value in JavaScript that represents negative infinity
+        while (length--) {
+          // while loop that will continue iterating as long as length is a positive number. At the start of each iteration, the value of length is decremented by 1
+          if (arr[length] > maximum) {
+            maximum = arr[length];
+            //Inside the loop, the function checks if the value of arr[length] is greater than the current value of maximum. If it is, then maximum is updated to the new value.
+          }
+        }
+        return maximum;
+        // returns the value of maximum
+      }
+    </script>
+  </body>
+</html>
