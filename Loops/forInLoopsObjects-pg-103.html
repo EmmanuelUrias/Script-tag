@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Learning JavaScript For/In Loop</p>
+    <p>Our for/in loops through all the properties of the object car.</p>
+    <p id="demo1"></p>
+    <script>
+      var msg = "";
+
+      var car = { name: "Honda", model: "Vezel", year: 2020, make: "Japan" };
+
+      var YY;
+
+      for (YY in car) {
+        msg += car[YY] + " ";
+      }
+
+      document.getElementById("demo1").innerHTML = msg;
+    </script>
+    <p>
+      In this example, the for in loop tends to iterate through the object car.
+      With each iteration it returns the key (YY). The program uses the key to
+      access a specific value of the key that is car[YY].
+    </p>
+  </body>
+</html>

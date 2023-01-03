@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="forloop-demo"></p>
+    <script>
+      var carsforsale = ["Honda", "Toyota", "Vezel", "Fiat", "Volkswagen"];
+
+      var msg = "";
+
+      var YY;
+
+      for (YY = 0; YY < carsforsale.length; YY++) {
+        msg += carsforsale[YY] + "<br>";
+      }
+      // I created an array and then added a for loop to iterate through the elements of the array. The for loop iterated through the items of the array and displayed them neatly on independent lines.
+
+      document.getElementById("forloop-demo").innerHTML = msg;
+    </script>
+  </body>
+</html>

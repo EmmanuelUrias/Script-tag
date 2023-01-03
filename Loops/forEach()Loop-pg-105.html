@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Learning JavaScript Array.forEach() loops</p>
+    <p>
+      This program will call a function one time for each element of the array.
+    </p>
+    <p id="demo5"></p>
+    <script>
+      var msg = "";
+      var nums = [55545, 454, 1239, 78816, 45625];
+
+      nums.forEach(FunctionYZ);
+
+      document.getElementById("demo5").innerHTML = msg;
+
+      function FunctionYZ(fvalue, findex, farray) {
+        // because were only using the fvalue parameter we can omit the other two but for the sake of showing the potential parameters we can use I'll leave them.
+        msg = msg + fvalue + "<br>";
+      }
+    </script>
+    <p>
+      The function in the above-mentioned code usually takes in three arguments.
+      The first argument is the value of the item. The second argument is the
+      index of the item, and the third argument is the array itself.
+    </p>
+  </body>
+</html>

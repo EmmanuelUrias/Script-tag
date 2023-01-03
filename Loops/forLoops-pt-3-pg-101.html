@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo1"></p>
+    <script>
+      var carsforsale = ["Vezel", "Fortuner", "Sportage", "Sorento"];
+
+      var YY = 0;
+
+      var length = carsforsale.length;
+      var msg = "";
+
+      for (; YY < length; YY++) {
+        msg += carsforsale[YY] + "<br>";
+      }
+      document.getElementById("demo1").innerHTML = msg;
+    </script>
+  </body>
+</html>

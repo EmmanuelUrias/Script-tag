@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=windows-1050" http-equiv="Cont-Type" />
+  </head>
+  <body>
+    <p>These are JavaScript For In Loops</p>
+    <p>
+      I will show how the for/in statement loop through and over Array values.
+    </p>
+    <p>
+      The for/in loop is special because you can pair it up with an array and it
+      will loop through the properties of the array just like it did with the
+      properties of the object.
+    </p>
+    <p id="demo5"></p>
+    <script>
+      var msg = "";
+      var nums = [5545, 24, 139, 6716, 4425];
+      var YY;
+      for (YY in nums) {
+        msg += nums[YY] + "<br>";
+      }
+      document.getElementById("demo5").innerHTML = msg;
+    </script>
+    <p>
+      You should drop the idea of using for in over the array loops if you are
+      keen on the order of the index. It is important and better for you to use
+      a for of loop, for loop, and the Array.forEach() whenever you think the
+      order is special.
+    </p>
+  </body>
+</html>
