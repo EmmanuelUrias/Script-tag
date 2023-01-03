@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forEach method</title>
+  </head>
+  <body>
+    <p>forEach()</p>
+    <p id="displayCities"></p>
+    <script>
+      let cities = [
+        "Las Vegas",
+        "Los Angeles",
+        "New York",
+        "Chicago",
+        "Seattle",
+        "Pheonix",
+      ];
+
+      let cityDisplay = "";
+
+      cities.forEach((city) => {
+        console.log(city);
+        cityDisplay += city + "<br />";
+      });
+      document.getElementById("displayCities").innerHTML = cityDisplay;
+    </script>
+  </body>
+</html>

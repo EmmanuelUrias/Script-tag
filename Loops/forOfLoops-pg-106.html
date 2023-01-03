@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>These are JavaScript For/Of Loop</p>
+    <p>
+      The for/of statement will create a loop through all the values of objects
+      that you can iterate through.
+    </p>
+    <p id="demo6"></p>
+    <script>
+      let carsforsale = ["Volkswagen", "Vezel", "Ford", "Fortuner", "Sportage"];
+      // The for/of loop also works with strings
+
+      let msg = "";
+
+      for (let YY of carsforsale) {
+        // We can omit the 'let'
+        // The for/of deconstructs the array.'YY' is the variable we assigned to the elements/values of the array.
+        msg += YY + "<br>";
+      }
+
+      document.getElementById("demo6").innerHTML = msg;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Do While Loop</title>
+  </head>
+  <body>
+    <p>Do While Loop</p>
+    <p id="displayI"></p>
+    <script>
+      let i = 0;
+      let msg = "";
+
+      do {
+        console.log(i);
+        msg += i + "<br />";
+        i++;
+      } while (i < 26);
+      // Although very similar to while loops the difference lies in that the 'do' loop is ran before the 'while' condition. So if the condition was i < 0 the 'do' would still increment by one before reading the condition.
+
+      document.getElementById("displayI").innerHTML = msg;
+    </script>
+  </body>
+</html>
