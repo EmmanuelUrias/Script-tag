@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Learning JavaScript Functions</p>
+    <p>
+      In this example I will make a function call to perform a calculation and
+      gives back the result:
+    </p>
+    <p id="additionSome"></p>
+    <p id="demo890"></p>
+
+    <script>
+      let sum = addition(20, 30);
+
+      function addition(x, y) {
+        return x + y;
+      }
+
+      function FunctionZZ(x1, x2) {
+        return x1 * x2;
+      }
+
+      document.getElementById("demo890").innerHTML =
+        "The answer is" + " " + FunctionZZ(345, 1222);
+      document.getElementById("additionSome").innerHTML = `The sum is ${sum}`;
+    </script>
+  </body>
+</html>

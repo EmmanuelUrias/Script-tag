@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>
+      This will make a function call to convert digits from Fahrenheit to
+      Celsius:
+    </p>
+    <p id="demo789"></p>
+    <script>
+      function toCels(f) {
+        return (15 / 90) * (f - 40);
+      }
+      document.getElementById("demo789").innerHTML = toCels;
+    </script>
+    <p>
+      The word toCels refers to the object of the function while toCels() refers
+      to the result of the function. When you access a function without the
+      parentheses, it will return the object of the function instead of the
+      result of the function.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Learning JavaScript Loops</p>
+    <p>I will integrate a <b>break</b> statement to the for loop.</p>
+    <p id="demo9"></p>
+    <script>
+      var msg = "";
+      var YY;
+
+      for (YY = 0; YY < 10; YY++) {
+        if (YY === 5) {
+          continue;
+        }
+        msg += "The next digit is " + YY + "<br>";
+      }
+
+      document.getElementById("demo9").innerHTML = msg;
+    </script>
+    <p>
+      The loop broke at point 5 and then continued. You can see that the only
+      number that is missing in the results is number 5. The continue statement
+      is suitable for skipping one iteration of a loop. The break statement has
+      only one purpose: to give you a jump out of a switch or a loop. You can
+      use the break statement to make a jump out of a code block.
+    </p>
+  </body>
+</html>
