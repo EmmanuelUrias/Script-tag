@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Analyzing the built-in constructor to create functions.</p>
+    <p id="demo555"></p>
+    <script>
+      var FunctionLK = new Function("x", "y", "return x * y");
+      // although this works theres no real need for it when you can do the alternative.
+
+      document.getElementById("demo555").innerHTML = FunctionLK(345, 2);
+    </script>
+  </body>
+</html>
