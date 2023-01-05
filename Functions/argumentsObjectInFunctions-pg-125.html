@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>I am now finding the largest number in an array.</p>
+    <p id="demo123"></p>
+    <script>
+      function findingtheMax() {
+        var O;
+        var maximum = -Infinity;
+        // In this code, maximum is a variable that is used to store the maximum value that is found in the list of arguments passed to the findingtheMax function. It is initialized to -Infinity, which is a special value in JavaScript that represents a negative number that is greater than any other number.
+        for (O = 0; O < arguments.length; O++) {
+          // This object is pre-filled with an array that you can use when you invoke a function.
+          // The purpose of this initialization is to ensure that the maximum variable will always be updated with the maximum value, even if the list of arguments is empty or contains only negative numbers.
+          if (arguments[O] > maximum) {
+            maximum = arguments[O];
+          }
+        }
+        return maximum;
+      }
+
+      document.getElementById("demo123").innerHTML = findingtheMax(
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      );
+    </script>
+    <p>
+      The parameters, when a function is invoked, act as the arguments of a
+      function. You can pass on JavaScript arguments by values. The function has
+      to know the values and not the locations of the arguments. If a specific
+      function makes a change in the value of an argument, it will not change
+      the parameter's original value. The changes you make to function arguments
+      cannot be seen or used out of a function's restrictions.
+    </p>
+  </body>
+</html>

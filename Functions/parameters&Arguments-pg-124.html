@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <p>
+      A JavaScript function cannot perform any kind of check on the values of
+      the parameter. Function parameters are names that are listed in the
+      definition of the function. The arguments, on the other hand, consist of
+      real values that are passed to the function. After receiving them, the
+      function works on them and uses them to create different types of outputs.
+    </p>
+    <p>
+      There are no set rules to define the parameters. JavaScript function
+      parameters don’t have to define the data types for the parameters. There
+      is no typechecking you should do on passed arguments. There is absolutely
+      no check on the total number of arguments a function receives.
+    </p>
+    <p>I am now setting up a default value to the function parameter.</p>
+    <p id="demo567"></p>
+    <script>
+      function FunctionTUP(a, b = 5) {
+        // we can declare the values of default parameters in the declaration of the function.
+        return a * b;
+      }
+      document.getElementById("demo567").innerHTML = FunctionTUP(6);
+    </script>
+  </body>
+</html>

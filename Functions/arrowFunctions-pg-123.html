@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Learning JavaScript Arrow Functions</p>
+    <p>IE11 or earlier versions do not support Arrow functions.</p>
+    <p id="demo123"></p>
+    <script>
+      const a = (a, b) => a * b;
+
+      document.getElementById("demo123").innerHTML = a(50, 50);
+    </script>
+    <p>
+      Arrow functions are not suited well to define methods pertaining to
+      objects. These functions lack the hoisting feature. You must define an
+      arrow function before you put it to use in a program. Without the
+      definition, you will see an error in the program. The use of const in
+      arrow functions is considered a safer method instead of using the var
+      keyword. This is because a function expression always has a constant
+      value. You should remove the curly braces and the return keyword if only
+      the function consists of a single statement.
+    </p>
+    <p>
+      const obj = {<br />
+      name: "Alice",<br />
+      greet: () => {<br />
+      console.log(`Hello, my name is ${this.name}`);<br />
+      }<br />
+      };<br />
+      <br />
+      obj.greet(); // Output: "Hello, my name is undefined"
+    </p>
+    <p>
+      The arrow function doesn't have the 'this' value. If we used a regular
+      function it would display the name in the console.log()
+    </p>
+  </body>
+</html>

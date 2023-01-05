@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>This is JavaScript Function</p>
+    <p>
+      My global function will return the product of different arguments. If you
+      invoke FunctionXXX, you are actually invoking window.FunctionXXX. Both are
+      the same. (x , y):
+    </p>
+    <p id="demo77"></p>
+    <p>
+      The function in the example has no connection to any of the objects. This
+      brings us to the question as to why the execution was successful in the
+      absence of an object. The answer is that JavaScript has a default global
+      object. As JavaScript walks side by side with HTML, the default object in
+      HTML is the HTML page itself therefore the function is used by the HTML
+      page. Inside of a browser, the object is the window of your visitor's
+      browser so the function turns into a window function.
+    </p>
+    <script>
+      function FunctionXXX(x, y) {
+        return x * y;
+      }
+
+      document.getElementById("demo77").innerHTML = FunctionXXX(12, 89);
+      //My global function will return the product of different arguments. If you invoke FunctionXXX, you are actually invoking window.FunctionXXX. Both are the same.
+    </script>
+    <p>
+      The practice of invoking is common but it is not considered good. Methods,
+      global variables, and functions may land you in naming conflicts and bugs
+      in a global object.<br />
+      In JavaScript, if you see the this keyword, you should understand that it
+      is an object that is the owner of the current code. When you use it in a
+      function, the value of this is the object which owns the function. This is
+      not actually a variable but a keyword. You cannot change its value.
+    </p>
+  </body>
+</html>
