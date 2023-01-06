@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>JavaScript Objects</p>
+    <p id="demo90"></p>
+    <p>
+      <mark
+        >The new keyword in the world of JavaScript is the most important.</mark
+      >
+      It has many properties, and you can use it in multiple ways. See its use
+      in the same example and feel the difference, not in the result but only in
+      the code.
+    </p>
+    <p>
+      You can mute JavaScript objects at will. You must address an object by a
+      reference and not by a value. If you have built an object by a person's
+      attributes, you cannot create a copy by simple methods.
+    </p>
+    <script>
+      var man1 = new Object();
+      man1.Namef = "Christiano";
+      man1.Namel = "Ronaldo";
+      man1.profession = "soccer star";
+      man1.economicalstatus = "rich";
+      document.getElementById("demo90").innerHTML =
+        man1.Namef +
+        " is the biggest " +
+        man1.profession +
+        " across the world. He is a " +
+        man1.economicalstatus +
+        " person.";
+    </script>
+  </body>
+</html>

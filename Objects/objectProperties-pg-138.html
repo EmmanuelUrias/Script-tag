@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>JavaScript Object Properties</p>
+    <p id="demo555"></p>
+    <p>
+      JavaScript Properties are the most important parts of objects. Each object
+      has a value named as a property. Each object is built on a set of
+      unordered properties. You can change them, add more to them or delete
+      them. However, some of them are read-only.
+    </p>
+    <script>
+      var msg = "";
+
+      var man1 = { namef: "Lionel", namel: "Messi", agem: 33 };
+
+      man1.nationality = "Argentinian";
+      // this is how we add properties to objects without actually going into the object to change it.
+
+      // var Y;
+      //you can comment out the line above since we end up defining Y is the paramter of the for in loop
+
+      for (Y in man1) {
+        msg += man1[Y] + " ";
+      }
+      document.getElementById("demo555").innerHTML = msg;
+    </script>
+  </body>
+</html>

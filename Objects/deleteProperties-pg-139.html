@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>JavaScript Objects</p>
+    <p id="demo90"></p>
+    <script>
+      var man1 = {
+        Namef: "Christiano",
+        Namel: "Ronaldo",
+        profession: "soccer star",
+        economicalstatus: "rich",
+      };
+
+      man1.nationality = "Portuguese";
+      console.log(man1.nationality);
+
+      delete man1.nationality;
+
+      // This will delete this property from the object
+      document.getElementById("demo90").innerHTML =
+        man1.Namef +
+        " is the biggest " +
+        man1.profession +
+        " across the world. He is from " +
+        man1.nationality +
+        ".";
+    </script>
+  </body>
+</html>

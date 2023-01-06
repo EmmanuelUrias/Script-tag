@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Learning JavaScript Objects</p>
+    <p id="objects-demo"></p>
+    <p>
+      The objects in JavaScript have curly braces around them. You have to write
+      the properties of objects in the form of <mark>name:value pairs</mark>.
+      You may separate them with commas. Objects are treated as emperors in the
+      world of JavaScript. If you have a thorough concept of objects, you can
+      understand JavaScript well.
+    </p>
+    <p>
+      an object is a collection of properties, where a property is an
+      association between a name (also known as a key) and a value. Properties
+      can be of any data type, including simple types like strings, boolean and
+      numbers, and more complex types like arrays and other objects. Properties
+      can also have methods, which are functions that are associated with an
+      object.
+    </p>
+    <p>
+      <mark
+        >Math and dates are objects as well. Arrays and regular expressions are
+        objects. Functions also are objects. Except for primitives, everything
+        in JavaScript is an object.</mark
+      >
+    </p>
+    <p>
+      Objects may be filled up with variables. An object in JavaScript is a
+      collection of values that are named. These named values are known as
+      properties. You saw their applications in the chapter on functions. You
+      can perform certain actions named as methods on different objects. These
+      properties may be primitive, like objects and functions. An object method
+      contains the definition of a function, and you can create and define an
+      object in JavaScript. You can use a number of methods to do that. You can
+      achieve this purpose to create an object, namely literal. The keyword new
+      is used for the creation. Object literal is considered the easiest way to
+      create an object in JavaScript. By using the object literal, you can do
+      that using one statement only.
+    </p>
+    <script>
+      var car = {
+        Name: "BMW",
+        Make: "Germany",
+        model: 2020,
+        Color: "silver",
+        isCoolCar: true,
+        historyAboutCars: {
+          dateInvented: "1895",
+          Inventor: "Henry Ford",
+        },
+      };
+
+      // car.isCoolCar = false;
+      // if we uncomment the above line of code. The status of the isCoolCar property will turn into false.
+
+      console.log(car.isCoolCar);
+
+      document.getElementById("objects-demo").innerHTML =
+        car.Name +
+        " is made in " +
+        car.Make +
+        "." +
+        " The model no is " +
+        car.model +
+        " and the color is " +
+        car.Color +
+        "." +
+        "<br />" +
+        "Here is some fun facts about cars. Cars were invented in the year" +
+        " " +
+        car.historyAboutCars.dateInvented +
+        "." +
+        "<br />" +
+        "They were invented by" +
+        " " +
+        car.historyAboutCars.Inventor +
+        "." +
+        "<br />" +
+        "<strong>Disclaimer:<strong/>" +
+        " " +
+        "The following information above is probably false";
+    </script>
+  </body>
+</html>
