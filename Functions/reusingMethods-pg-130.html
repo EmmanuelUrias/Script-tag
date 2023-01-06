@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Working on JavaScript Functions</p>
+    <p>thisObject.Namef() will return Mac Millan:</p>
+    <p id="demo234"></p>
+    <script>
+      var thisObject = {
+        Namef: "Mac",
+        Namel: "Millan",
+        completeName: function () {
+          return this.Namef + " " + this.Namel;
+        },
+      };
+
+      Y = thisObject.completeName();
+
+      document.getElementById("demo234").innerHTML = thisObject.completeName();
+      Y;
+      // If you delete either Y or thisObject.completeName() the code being displayed should not changed since they are the same
+    </script>
+    <p>
+      With the help of the call() method, you may use a method to apply to
+      different types of objects. In JavaScript, all functions are methods of
+      objects. If a function is not, it belongs to a global object.
+    </p>
+  </body>
+</html>

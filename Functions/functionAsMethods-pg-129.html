@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Working on JavaScript Functions</p>
+    <p>thisObject.Namef() will return Mac Millan:</p>
+    <p id="demo234"></p>
+    <script>
+      var thisObject = {
+        Namef: "Mac",
+        Namel: "Miller",
+        completeName: function () {
+          return this.Namef + " " + this.Namel;
+        },
+      };
+      document.getElementById("demo234").innerHTML = thisObject.completeName();
+    </script>
+    <p>
+      The completeName is a function that belong to an object named as
+      thisObject. This object owns the function.
+    </p>
+  </body>
+</html>

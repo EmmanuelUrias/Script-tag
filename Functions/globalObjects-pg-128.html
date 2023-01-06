@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>
+      In HTML programming language, the value of <b>this</b> is the window
+      object.
+    </p>
+    <p id="demo777"></p>
+    <p>
+      In JavaScript, global objects are objects that are available in the global
+      scope. This means that you can access these objects from any script or
+      function in your code, without having to explicitly declare or import
+      them.
+    </p>
+    <p>
+      There are several built-in global objects in JavaScript, including:<br />
+      <br />
+      Math: This object provides mathematical functions and properties, such as
+      Math.PI and Math.sin().<br />
+      <br />
+      Date: This object provides functions for working with dates and times.<br />
+      <br />
+      String: This object provides functions for working with strings, such
+      as<br />
+      String.prototype.substr() and String.prototype.toLowerCase().<br />
+      <br />
+      Array: This object provides functions for working with arrays, such as<br />
+      Array.prototype.push() and Array.prototype.sort().
+    </p>
+    <p>
+      In addition to these built-in global objects, you can also create your own
+      global objects by declaring variables in the global scope. For example:<br />
+      <br />
+      var myGlobalObject = {};
+    </p>
+    <p>
+      Keep in mind that using global objects can lead to conflicts and namespace
+      pollution, so it's generally a good idea to avoid creating global objects
+      unless absolutely necessary. Instead, consider using modules or other
+      techniques to manage your code.
+    </p>
+    <script>
+      var Y = FunctionDD();
+      function FunctionDD() {
+        return this;
+      }
+      document.getElementById("demo777").innerHTML = Y;
+    </script>
+  </body>
+</html>

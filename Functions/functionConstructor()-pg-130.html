@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Function constructor:</p>
+    <p id="demo234"></p>
+    <script>
+      function FunctionT(argument1, argument2) {
+        this.Namef = argument1;
+        this.Namel = argument2;
+      }
+      // a constructor function is a special type of function that is used to create and initialize an object. When you create an object using a constructor function, you can set the initial values for the object's properties and methods by passing arguments to the constructor function.
+
+      var Y = new FunctionT("Mac", "Millan");
+
+      document.getElementById("demo234").innerHTML = Y.Namef;
+    </script>
+    <p>
+      Another example of a constructor function:<br />
+      function Car(make, model, year) {<br />
+      this.make = make;<br />
+      this.model = model;<br />
+      this.year = year;<br />
+      }
+    </p>
+    <p>
+      To use this constructor function you'd have to create a new car object:<br />
+      let myCar = new Car("Toyota", "Camry", 2020);<br />
+      <br />
+      This would create a new Car object with the properties make, model, and
+      year set to the values "Toyota", "Camry", and 2020, respectively.
+    </p>
+    <p>
+      Constructor functions are typically used to create multiple objects with
+      the same properties and methods, but with different initial values. They
+      are a useful way to encapsulate data and behavior and to create reusable
+      code.
+    </p>
+  </body>
+</html>
