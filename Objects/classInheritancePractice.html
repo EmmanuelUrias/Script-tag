@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>class extends keyword</title>
+  </head>
+  <body>
+    <script>
+      class ParentClass {
+        // The parent class has a method called greet
+        greet() {
+          console.log("Hello from the parent class!");
+        }
+      }
+
+      class ChildClass extends ParentClass {
+        // The child class has its own method called greet
+        greet() {
+          // The child class can access the greet method of the parent class
+          super.greet();
+          console.log("Hello from the child class!");
+        }
+      }
+
+      let child = new ChildClass();
+      child.greet(); // Output: "Hello from the parent class! Hello from the child class!"
+    </script>
+  </body>
+</html>
