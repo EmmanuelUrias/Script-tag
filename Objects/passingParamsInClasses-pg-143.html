@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>This is the JavaScript Class</p>
+    <p>
+      I will show you how to create and use the JavaScript Class on your
+      website.
+    </p>
+    <p>
+      You can send off parameters to your JavaScript classes. I will pass the
+      age and year parameters to JavaScript class. See the following example.
+    </p>
+    <p id="demo777"></p>
+    <p id="demo778"></p>
+    <script>
+      class LuxCars {
+        constructor(cname, cyear, cmake, cmodel, ccolor) {
+          this.cname = cname;
+          this.cyear = cyear;
+          this.cmake = cmake;
+          this.cmodel = cmodel;
+          this.ccolor = ccolor;
+        }
+        carAge(Y) {
+          return Y - this.cyear;
+        }
+      }
+
+      let cdate = new Date();
+      let cyear = cdate.getFullYear();
+      // cyear is being defined above to be passed as Y when the method is called.
+
+      let Car1 = new LuxCars("Ford", 2017, "USA", "Mustang", "Blue");
+      document.getElementById("demo777").innerHTML =
+        Car1.cname +
+        " " +
+        Car1.cyear +
+        " " +
+        Car1.cmake +
+        " " +
+        Car1.cmodel +
+        " " +
+        Car1.ccolor +
+        " : " +
+        "This car is " +
+        Car1.carAge(cyear) +
+        " years old.";
+
+      let Car2 = new LuxCars("BMW", 2010, "Germany", "K45", "Silver");
+      document.getElementById("demo778").innerHTML =
+        Car2.cname +
+        " " +
+        Car2.cyear +
+        " " +
+        Car2.cmake +
+        " " +
+        Car2.cmodel +
+        " " +
+        Car2.ccolor +
+        " : " +
+        "This car is " +
+        Car2.carAge(cyear) +
+        " years old.";
+    </script>
+  </body>
+</html>

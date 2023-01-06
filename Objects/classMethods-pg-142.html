@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>This is the JavaScript Class</p>
+    <p>
+      I will show you how to create and use the JavaScript Class on your
+      website.
+    </p>
+    <p>
+      The procedure to write and execute class methods is the same as writing
+      and creating an object. You have to use the class keyword and the
+      constructor() method when you are adding a new method to the class. The
+      total number of methods that you can add does not have an upper cap. You
+      can add any number at will. Let us add a new method to declare the age of
+      the car. JavaScript calculates the age of the car by using the current
+      date as a reference. For example, if a car is produced in 2020, the
+      program will display the age as 1 year old because the current year is
+      2021.
+    </p>
+    <p id="demo777"></p>
+    <p id="demo778"></p>
+    <p id="demo779"></p>
+    <script>
+      class LuxCars {
+        constructor(cname, cyear, cmake, cmodel, ccolor) {
+          this.cname = cname;
+          this.cyear = cyear;
+          this.cmake = cmake;
+          this.cmodel = cmodel;
+          this.ccolor = ccolor;
+        }
+        carAge() {
+          let cdate = new Date();
+          return cdate.getFullYear() - this.cyear;
+        }
+      }
+
+      let Car1 = new LuxCars("Ford", 2017, "USA", "Mustang", "Blue");
+      document.getElementById("demo777").innerHTML =
+        Car1.cname +
+        " " +
+        Car1.cyear +
+        " " +
+        Car1.cmake +
+        " " +
+        Car1.cmodel +
+        " " +
+        Car1.ccolor +
+        " : " +
+        "This car is " +
+        Car1.carAge() +
+        " years old.";
+
+      let Car2 = new LuxCars("BMW", 2010, "Germany", "K45", "Silver");
+      document.getElementById("demo778").innerHTML =
+        Car2.cname +
+        " " +
+        Car2.cyear +
+        " " +
+        Car2.cmake +
+        " " +
+        Car2.cmodel +
+        " " +
+        Car2.ccolor +
+        " : " +
+        "This car is " +
+        Car2.carAge() +
+        " years old.";
+
+      let Car3 = new LuxCars("Mercedes", 2021, "Germany", "S-Class", "Black");
+      document.getElementById("demo779").innerHTML =
+        Car3.cname +
+        " " +
+        Car3.cyear +
+        " " +
+        Car3.cmake +
+        " " +
+        Car3.cmodel +
+        " " +
+        Car3.ccolor +
+        " : " +
+        "This car is " +
+        Car3.carAge() +
+        " years old.";
+    </script>
+  </body>
+</html>

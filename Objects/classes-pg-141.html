@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>This is the JavaScript Class</p>
+    <p>
+      I will show you how to create and use the JavaScript Class on your
+      website.
+    </p>
+    <p>
+      JavaScript is also known as a prototype-based language. Every object in
+      this language keeps a hidden and internal property known as [[Prototype]].
+      You can use it to extend the methods and properties of the objects you
+      create in the language. You can use the keyword class for the creation of
+      a class. Another important method to add to your class is the
+      constructor() method. Just as we added properties to objects, we can add
+      properties to classes. A class itself is not an object but a template to
+      create objects and work with them on web browsers.
+    </p>
+    <p id="demo777"></p>
+    <p id="demo778"></p>
+    <p id="demo779"></p>
+    <script>
+      class LuxCars {
+        // ^ pretty cool :)
+        constructor(cname, cyear, cmake, cmodel, ccolor) {
+          this.cname = cname;
+          this.cyear = cyear;
+          this.cmake = cmake;
+          this.cmodel = cmodel;
+          this.ccolor = ccolor;
+        }
+      }
+      Car1 = new LuxCars("Ford", 2020, "USA", "Mustang", "Blue");
+      document.getElementById("demo777").innerHTML =
+        Car1.cname +
+        " " +
+        Car1.cyear +
+        " " +
+        Car1.cmake +
+        " " +
+        Car1.cmodel +
+        " " +
+        Car1.ccolor;
+      Car2 = new LuxCars("BMW", 2010, "Germany", "K45", "Silver");
+      document.getElementById("demo778").innerHTML =
+        Car2.cname +
+        " " +
+        Car2.cyear +
+        " " +
+        Car2.cmake +
+        " " +
+        Car2.cmodel +
+        " " +
+        Car2.ccolor;
+      Car3 = new LuxCars("Mercedes", 2021, "Germany", "S-Class", "Black");
+      document.getElementById("demo779").innerHTML =
+        Car3.cname +
+        " " +
+        Car3.cyear +
+        " " +
+        Car3.cmake +
+        " " +
+        Car3.cmodel +
+        " " +
+        Car3.ccolor;
+    </script>
+    <p>
+      I have created three different objects by using the same LuxCars class.
+      Classes offer the easiest methods to create and deploy objects to work.
+      This program can be helpful to you if you are running a car showroom and
+      you need a website to reach out to customers. One single class allows you
+      to create unlimited objects of different cars. Once you create the class,
+      all you need is to fill it up with the properties and display them on your
+      website. When a new object comes into being, the constructor method is
+      called upon and run automatically. This method is special. You must write
+      the clear spelling ‘constructor.’ When you create a new object in a class,
+      the method executes automatically, saving your time. This method starts
+      the properties of objects.
+    </p>
+  </body>
+</html>
