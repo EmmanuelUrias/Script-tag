@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>
+      The following example will call the fullName method of a person by using
+      it on another person:
+    </p>
+    <p id="demo90"></p>
+    <p>
+      The call() method is flexible enough to include many arguments to the
+      function to make it more interactive and useful.
+    </p>
+    <script>
+      // The call() method in JavaScript is like a predefined method that you can use to invoke a method. You can use a method that another object owns.
+      var man = {
+        completeName: function (msg, celebrationTrademark) {
+          return (
+            this.Namef +
+            " " +
+            this.Namel +
+            " " +
+            msg +
+            " " +
+            celebrationTrademark
+          );
+        },
+      };
+      var man1 = { Namef: "Christiano", Namel: "Ronaldo" };
+      var man2 = {
+        Namef: "Lionel",
+        Namel: "Messi",
+      };
+
+      let celebrationTrademark = "SUIIIIIIII";
+
+      var Y = man.completeName.call(
+        man1,
+        "is the best soccer player in the world",
+        celebrationTrademark
+      );
+      // Cannot arguments into the call method above without first defining them in the object method first
+
+      document.getElementById("demo90").innerHTML = Y;
+    </script>
+  </body>
+</html>
