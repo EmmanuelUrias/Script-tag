@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>This is the JavaScript Class</p>
+    <p>
+      I will show you how to create and use the JavaScript Class on your
+      website.
+    </p>
+    <p>
+      With classes, you can adjust getters and setters in the browser. Getters
+      and setters are useful for the properties if you need to do something
+      special with the returning values. You can use the get and set keywords to
+      add them to your classes.
+    </p>
+    <p id="demo777"></p>
+    <p id="demo778"></p>
+    <script>
+      class LuxCars {
+        constructor(carname, caryear, carmake, carmodel, carcolor) {
+          this.cname = carname;
+          this.cyear = caryear;
+          this.cmake = carmake;
+          this.cmodel = carmodel;
+          this.ccolor = carcolor;
+        }
+
+        get namec() {
+          return this.cname;
+        }
+
+        set namec(Y) {
+          this.cname = Y;
+        }
+      }
+
+      let Car2 = new LuxCars("Tesla");
+      document.getElementById("demo778").innerHTML = Car2.namec;
+    </script>
+  </body>
+</html>

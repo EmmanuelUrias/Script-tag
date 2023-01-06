@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>This is the JavaScript Class</p>
+    <p>
+      I will show you how to create and use the JavaScript Class on your
+      website.
+    </p>
+    <p>
+      If you want to create a class inheritance, you have to add the extends
+      keyword to the class. The extends keyword transfers all the methods to the
+      inherited class.
+    </p>
+    <p id="demo777"></p>
+    <p id="demo778"></p>
+    <script>
+      class LuxCars {
+        constructor(cname, cyear, cmake, cmodel, ccolor) {
+          this.cname = cname;
+          this.cyear = cyear;
+          this.cmake = cmake;
+          this.cmodel = cmodel;
+          this.ccolor = ccolor;
+        }
+        present() {
+          return "We have a " + this.cname + " for sale";
+        }
+      }
+
+      class Ecar extends LuxCars {
+        constructor(battery, model) {
+          super(battery);
+          this.cmodel = model;
+        }
+        show() {
+          return this.present() + ". It is a " + this.cmodel + " model.";
+        }
+      }
+
+      let Car2 = new Ecar("Tesla", 2010);
+
+      document.getElementById("demo778").innerHTML = Car2.show();
+    </script>
+    <p>
+      The super() method in the above code refers to the parent class. When you
+      call this method in the constructor method, you get access to the parent
+      class's properties and methods. The sole purpose of inheritance is that it
+      keeps you from writing the same code repeatedly. You can write a class
+      once and use its methods and properties by creating child classes.
+      Whenever you create a new class, there is no need to write from the start.
+      It saves time and space.
+    </p>
+  </body>
+</html>
